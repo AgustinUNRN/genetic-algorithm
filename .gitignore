@@ -1,0 +1,21 @@
+# Entorno virtual
+.venv/
+.workshop.lock
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Herramientas y pruebas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Variables o secretos locales
+.env
+.env.*
+
+# Archivos generados
+build/
+dist/
+*.egg-info/
