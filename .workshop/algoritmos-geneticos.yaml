@@ -1,0 +1,22 @@
+name: algoritmos-geneticos
+base: ubuntu@26.04
+
+sdks:
+  - name: uv
+
+actions:
+  inicio: |
+    cd /project
+    uv run --no-project python algoritmo_genetico.py 
+
+  ruleta: |
+    cd /project
+    uv run --no-project python algoritmo_genetico.py --seleccion ruleta
+
+  ranking: |
+    cd /project
+    uv run --no-project python algoritmo_genetico.py --seleccion ranking
+
+  torneo: |
+    cd /project
+    uv run --no-project python algoritmo_genetico.py --seleccion torneo
